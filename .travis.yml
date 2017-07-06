@@ -4,7 +4,6 @@ language: android
 jdk: oraclejdk8
 
 before_install:
-  before_install:
   - bash .travis-android-license-bugfix.sh
 
 android:
