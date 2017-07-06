@@ -3,6 +3,9 @@ sudo: false
 language: android
 jdk: oraclejdk8
 
+before_install:
+  - bash .travis-android-license-bugfix.sh
+
 android:
   components:
     - tools
@@ -16,6 +19,11 @@ android:
 
 before_script:
   - chmod +x gradlew
+  - echo no | android create avd --force -n test -t android-21 --abi armeabi-v7a
+  - emulator -avd test -no-skin -no-audio -no-window &
+  - android-wait-for-emulator
+  - adb shell input keyevent 82 &
 
-script: 
-  - ./gradlew connectedCheck
+script:
+- ./gradlew jacocoTestReport 
+- ./gradlew connectedCheck
