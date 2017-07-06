@@ -1,5 +1,11 @@
+
+sudo: false
+
 language: android
 jdk: oraclejdk8
+
+before_install:
+  - bash .travis-android-license-bugfix.sh
 
 android:
   components:
