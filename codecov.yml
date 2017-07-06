@@ -1,0 +1,4 @@
+ignore:
+  - "app/src/main/assets/.*" 
+  - "app/src/main/java/project/pack/activities/.*" 
+  - app/src/main/java/project/pack/utilities/.*"
