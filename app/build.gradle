@@ -23,17 +23,8 @@ android {
     }
     buildTypes {
         release {
-            testCoverageEnabled true
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-        buildTypes {
-            debug {
-                testCoverageEnabled true
-            }
-        }
-        debug {
-            testCoverageEnabled true
         }
     }
 }
