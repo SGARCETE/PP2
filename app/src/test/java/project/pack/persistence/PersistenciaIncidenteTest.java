@@ -31,34 +31,34 @@ public class PersistenciaIncidenteTest {
         assertTrue(PersistenciaIncidente.getInstance().equals(pIncidente));
     }
 
-    @Test
-    public void addIncidente() throws Exception {
-        Categoria categoria = new Categoria();
-        Incidente in1 = new Incidente(null, "titulo", "descripcion", null, null, categoria);
-        // no tiene ID
-        Assert.assertEquals(in1.getId(),0);
-        // Ahora que lo guardo, tiene ID
-        Incidente recuIn1 = pIncidente.addIncidente(in1);
-        // Entonces como es el primero objeto, tiene id 1
-        Assert.assertEquals(in1.getId(),1);
-    }
+//    @Test
+//    public void addIncidente() throws Exception {
+//        Categoria categoria = new Categoria();
+//        Incidente in1 = new Incidente(null, "titulo", "descripcion", null, null, categoria);
+//        // no tiene ID
+//        Assert.assertEquals(in1.getId(),0);
+//        // Ahora que lo guardo, tiene ID
+//        Incidente recuIn1 = pIncidente.addIncidente(in1);
+//        // Entonces como es el primero objeto, tiene id 1
+//        Assert.assertEquals(in1.getId(),1);
+//    }
 
-    @Test
-    public void getListaIncidente() throws Exception {
-        
-        pIncidente.vaciarBD();
-
-        Categoria cat = new Categoria();
-        Incidente in1 = new Incidente(null, "titulo", "descripcion", null, null, cat);
-        Incidente in2 = new Incidente(null, "titulo", "descripcion", null, null, cat);
-
-        pIncidente.addIncidente(in1);
-        pIncidente.addIncidente(in2);
-
-        ArrayList<Incidente> lista = pIncidente.getListaIncidente();
-
-        Assert.assertEquals(lista.size() , 2);
-
-    }
+//    @Test
+//    public void getListaIncidente() throws Exception {
+//
+//        pIncidente.vaciarBD();
+//
+//        Categoria cat = new Categoria();
+//        Incidente in1 = new Incidente(null, "titulo", "descripcion", null, null, cat);
+//        Incidente in2 = new Incidente(null, "titulo", "descripcion", null, null, cat);
+//
+//        pIncidente.addIncidente(in1);
+//        pIncidente.addIncidente(in2);
+//
+//        ArrayList<Incidente> lista = pIncidente.getListaIncidente();
+//
+//        Assert.assertEquals(lista.size() , 2);
+//
+//    }
 
 }
