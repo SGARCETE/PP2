@@ -10,7 +10,6 @@ import android.widget.Toast;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 import project.pack.R;
 import project.pack.facade.Facade;
 import project.pack.utilities.ConnectionUtilities;
