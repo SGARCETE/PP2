@@ -33,6 +33,7 @@ public class PersistenciaIncidenteTest {
 
     @Test
     public void addIncidente() throws Exception {
+        // comentario
         Categoria categoria = new Categoria();
         Incidente in1 = new Incidente(null, "titulo", "descripcion", null, null, categoria);
         // no tiene ID
