@@ -31,7 +31,7 @@ public class PersistenciaIncidenteTest {
         assertTrue(PersistenciaIncidente.getInstance().equals(pIncidente));
     }
 
-    @Test
+    /**@Test
     public void addIncidente() throws Exception {
         // comentario
         Categoria categoria = new Categoria();
@@ -60,6 +60,6 @@ public class PersistenciaIncidenteTest {
 
         Assert.assertEquals(lista.size() , 2);
 
-    }
+    }*/
 
 }
