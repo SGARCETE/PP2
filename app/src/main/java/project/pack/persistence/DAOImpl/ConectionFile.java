@@ -17,7 +17,7 @@ import project.pack.facade.Facade;
 public class ConectionFile {
 
     public void Escribir(Object item, String File){
-
+/*
         ObjectOutputStream oos = null;
         FileOutputStream fos = null;
 
@@ -45,7 +45,8 @@ public class ConectionFile {
                     e.printStackTrace();
                 }
             }
-        }
+
+        }*/
 
     }
 
@@ -54,7 +55,7 @@ public class ConectionFile {
         ObjectInputStream ois = null;
         FileInputStream fis = null;
         Object item = null;
-
+/*
         Facade fac = Facade.getInstance();
         Context context = fac.getContext();
 
@@ -79,7 +80,7 @@ public class ConectionFile {
                     e.printStackTrace();
                 }
             }
-        }
+        }*/
         return item;
     }
 
