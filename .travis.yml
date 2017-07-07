@@ -1,7 +1,7 @@
 sudo: true
 
 language: android
-jdk: oraclejdk8
+jdk: oraclejdk7
 
 before_install:
   - bash .travis-android-license-bugfix.sh
