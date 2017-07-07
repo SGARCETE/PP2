@@ -33,8 +33,6 @@ before_script:
 script: 
   - ./gradlew jacocoTestReport
   - ./gradlew connectedCheck
-  after_failure:
-  - if [ -f /home/travis/build/leandroBorgesFerreira/MoreCLoseButton/app/build/outputs/lint-results-debug.html ]; then lynx -dump /home/travis/build/leandroBorgesFerreira/MoreCLoseButton/app/build/outputs/lint-results-debug.html;
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
