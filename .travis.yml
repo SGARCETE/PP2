@@ -1,5 +1,10 @@
 sudo: true
 
+addons:
+  apt:
+    packages:
+      - lynx
+
 language: android
 jdk: oraclejdk8
 
