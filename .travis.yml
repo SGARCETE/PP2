@@ -1,3 +1,6 @@
+
+sudo: true
+
 language: android
 
 android:
