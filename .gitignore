@@ -10,3 +10,4 @@
 *.idea*
 *gradle*
 build.gradle
+.idea/modules.xml
